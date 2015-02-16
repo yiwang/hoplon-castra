@@ -1,5 +1,9 @@
 (ns hoplon-castra.api
   (:require [tailrecursion.castra :refer [defrpc]]))
 
+(def counter (atom 0))
+
 (defrpc get-state []
-  {:random (rand-int 100)})
+  {:rpc/query [{:random (rand-int 100)
+                :counter @counter}]}
+  (swap! counter inc))

@@ -10,6 +10,7 @@
 (defc loading [])
 
 (defc= random-number (get state :random))
+(defc= counter (get state :counter))
 
 (def get-state
   (mkremote 'hoplon-castra.api/get-state state error loading))

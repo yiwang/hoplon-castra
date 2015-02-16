@@ -1,8 +1,6 @@
-/.boot/
-/resources/public/
+/.boot
+/resources/public
 /.nrepl-port
 /.repl-history
-/.lein-*
-/target
-/classes
-/checkouts
+.*
+!.gitignore

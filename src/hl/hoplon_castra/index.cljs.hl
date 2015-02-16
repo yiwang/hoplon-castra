@@ -8,6 +8,8 @@
 (rpc/init)
 
 (html
-  (head)
+  (head
+    (link :rel "stylesheet" :type "text/css" :href "css/main.css"))
   (body
-    (h1 (text "Hello, Hoplon and Castra! ~{rpc/random-number}"))))
+    (h1 (text "Hello, Hoplon and Castra! ~{rpc/random-number}"))
+    (p (text "Look! It's a counter: ~{rpc/counter}"))))
